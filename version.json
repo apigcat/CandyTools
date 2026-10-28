@@ -1,6 +1,6 @@
 {
-  "versionCode": 21,
-  "versionName": "3.5",
-  "notes": "新增：检查更新（仅点击时请求一次）\n修复：打赏码保存失败",
+  "versionCode": 22,
+  "versionName": "3.6",
+  "notes": "关于页四个模块统一背景与文字颜色\n修复打赏码保存（IS_PENDING 写入）\n新增检查更新（仅点击时请求一次）",
   "url": "https://github.com/apigcat/CandyTools/releases/latest"
 }
