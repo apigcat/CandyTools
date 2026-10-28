@@ -1,0 +1,6 @@
+{
+  "versionCode": 21,
+  "versionName": "3.5",
+  "notes": "新增：检查更新（仅点击时请求一次）\n修复：打赏码保存失败",
+  "url": "https://github.com/apigcat/CandyTools/releases/latest"
+}
