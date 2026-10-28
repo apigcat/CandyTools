@@ -2,8 +2,6 @@
 
 三星设备的小工具：**旁路充电**、**电池健康**、**频段固定（锁频）**、**网络质量**。
 
-> 作者：Candy dad's · 仓库：<https://github.com/apigcat/CandyTools> · 酷安：<https://www.coolapk.com/u/3988811>
-
 ## 安装
 
 ```bash
@@ -11,7 +9,7 @@ adb install -r CandyTools.apk
 ```
 
 - 包名 `com.candy.tools`，versionCode 22 / versionName 3.6，minSdk 21，targetSdk 33
-- 签名固定为 `keystore/candy.jks`（alias `candy`，密码 `android`），重打包可直接覆盖安装
+- 签名固定为 `keystore/candy.jks`
 - 签名方案 v1 + v2 + v3
 
 ## 后台与耗电
