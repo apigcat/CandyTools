@@ -209,9 +209,7 @@ res/mipmap-*/             图标
 tools/                    图标、赞赏码生成与补丁脚本
 version.json              检查更新的数据源
 build.ps1                 构建脚本
-- 包名 `com.candy.tools`，versionCode 26 / versionName 4.0，minSdk 21，targetSdk 33
-- 签名固定为 `keystore/candy.jks`（alias `candy`，密码 `android`），重打包可直接覆盖安装
-- 签名方案 v1 + v2 + v3
+
 
 
 ```
