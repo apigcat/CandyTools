@@ -160,19 +160,6 @@ CandyTools                       [说明] [日志] [关于]
 3. 把 APK 上传到 GitHub Releases
 4. 更新仓库根目录的 `version.json`（`versionCode` 必须比上一版大）并提交
 
-## 关于页
-
-- 作者 / 仓库 / 酷安 三行，颜色与标题一致，均可点击
-- 主题切换（跟随系统 / 浅色 / 深色）
-- 「请Candy dad’s☕」→ 弹出赞赏码大图，可保存到相册（Android 10+ 走 MediaStore `IS_PENDING`，10 以下写 `Pictures/CandyTools` 并申请存储权限），成功提示「你的支持是我继续开发的动力❤」
-- 检查更新
-
-赞赏码位于 `res/drawable-nodpi/donate.png`，替换方法：把自己的二维码放到 `tools/source_qr.png` 后执行
-
-```bash
-python tools/make_donate.py
-```
-
 ## 权限
 
 | 权限 | 用途 |
