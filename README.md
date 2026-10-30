@@ -1,3 +1,28 @@
+关于 CandyTools 后续更新与赞赏说明
+
+感谢大家一直以来的关注！v4.0 将作为最终的“公开免费版”，大家可以随意使用，但请勿盗卖和二改，谢谢！
+
+如果你只想白嫖一个能用的锁频+旁路工具，v4.0 绝对够你用了。后续新版本增加的功能内容，会有文字和图片介绍。
+
+由于软件 UI 美化和代码排坑，确实花了不少心血和精力。后面持续更新的版本和功能，不再免费提供。
+
+原因有两点：
+
+过滤伸手党、低素质人群。
+
+想让这个项目走得更远。
+
+我愿意将我后续的心血精力 作为“赞赏版”提供给愿意支持我的朋友。
+
+👉 赞赏（金额 20Y）并私信我截图，我会直接把最新编译的 APK 发给你。
+赞赏版承诺：后续的所有更新都会持续给到大家。
+
+感谢大家的包容与支持！
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
 # CandyTools v4.0
 
 ## 免责声明
@@ -76,17 +101,6 @@ CandyTools                       [说明] [日志] [关于]
 /sys/class/power_supply/battery/temp             # 0.1℃ -> ℃
 /sys/class/power_supply/battery/charge_counter   # µAh -> mAh
 ```
-
-无 root 时四行显示 `—`。电流在旁路生效（|I| < 150 mA 且旁路开启）时变亮青色。
-
-档案数据（`dumpsys battery`，进页面读一次）：
-
-| 展示 | 取值 | 换算 |
-|---|---|---|
-| 健康度 | `mSavedBatteryAsoc`（缺失用 `mSavedBatteryBsoh`） | `100` → `100 %` |
-| 循环次数 | `mSavedBatteryUsage` | `29542 / 100` → `295 次` |
-| 电池日期 | `FirstUseDate` | `20251024` → `2025-10-24` |
-
 ## 3. 📡 频段固定
 
 | 按钮 | 方式 | 数据来源 |
@@ -105,7 +119,6 @@ CandyTools                       [说明] [日志] [关于]
          → [C] Apply band configuration
 ```
 
-同页快捷键：`[A]` 清空、`[B]` 全选、`[D]` BLOCK SET BY AP。**恢复默认 = [B] → [C]**。
 
 常用频段（国内）：
 
@@ -130,85 +143,3 @@ CandyTools                       [说明] [日志] [关于]
 | 未知 | 点击「刷新」获取当前网络质量 | 灰 |
 
 点文案可看逐项原始值（运营商 / 制式 / 频段 / EARFCN / RSRP / RSRQ / SNR / 等级 / 判定）。
-
-## 主题
-
-- 三档：跟随系统 / 浅色 / 深色，入口在关于页
-- Material 3 配色：浅色背景 `#FEF7FF`、主色 `#6750A4`；深色背景 `#141218`、主色 `#D0BCFF`
-- 实现：`ThemeHelper` 在 `attachBaseContext` 里改 `uiMode`，配合 `values` 与 `values-night` 两套颜色；切换后以 `CLEAR_TOP` 重启主界面，三个页面立即换肤
-
-## 检查更新
-
-- 只在**点击「检查更新」时**请求一次，没有任何后台检查或轮询
-- 数据源是仓库根目录的 `version.json`，先试 jsDelivr CDN，失败再试 raw.githubusercontent
-- 有新版本弹窗显示版本号与更新说明，「去下载」用浏览器打开 Releases 页
-- 因为要发请求，manifest 申请了 `INTERNET`；不使用时不产生任何网络流量
-
-```json
-{
-  "versionCode": 26,
-  "versionName": "4.0",
-  "notes": "本次更新内容，一行一条",
-  "url": "https://github.com/apigcat/CandyTools/releases/latest"
-}
-```
-
-## 发版流程
-
-1. 改代码，更新 `AndroidManifest.xml` 与 `build.ps1` 的 `versionCode` / `versionName`
-2. 执行 `build.ps1` 打包
-3. 把 APK 上传到 GitHub Releases
-4. 更新仓库根目录的 `version.json`（`versionCode` 必须比上一版大）并提交
-
-## 权限
-
-| 权限 | 用途 |
-|---|---|
-| `WRITE_SETTINGS` | 写旁路开关、亮度模式 |
-| `INTERNET` | 仅在点击「检查更新」时访问 version.json |
-| `WRITE_EXTERNAL_STORAGE`（maxSdkVersion 28） | Android 9 及以下保存赞赏码 |
-
-电池数据、信号数据需要 root（`dumpsys`、sysfs 仅 shell/root 可读）。
-
-## 构建
-
-无 Gradle：
-
-```powershell
-powershell -ExecutionPolicy Bypass -File build.ps1
-powershell -ExecutionPolicy Bypass -File build.ps1 -Sdk "D:\Android\Sdk" -Jdk "C:\Java\jdk17"
-```
-
-需要 JDK 17 + `build-tools;34.0.0` + `platforms;android-34`。
-
-> `aapt2` 不认中文路径，工程在中文目录时先复制到英文路径（如 `C:\rilbuild\candy`）再构建。
-
-## 目录
-
-```
-src/com/candy/tools/
-    MainActivity.java     旁路 / 电池 / 锁频 / 网络质量 / 日志
-    BatteryBarView.java   横向电池条（自绘、动画、对比度自适应）
-    AboutActivity.java    关于页、主题切换、打赏保存、检查更新
-    HelpActivity.java     说明页
-    Shell.java            一次性 su 执行器
-    SignalMonitor.java    信号解析（单次调用）
-    ThemeHelper.java      主题模式与 uiMode 包装
-    UpdateChecker.java    检查更新（jsDelivr → raw 兜底）
-res/layout/               主界面、说明页、关于页
-res/values/               浅色配色与样式
-res/values-night/         深色配色与样式
-res/drawable/             卡片、按钮、电源图标
-res/drawable-nodpi/       donate.png
-res/mipmap-*/             图标
-tools/                    图标、赞赏码生成与补丁脚本
-version.json              检查更新的数据源
-build.ps1                 构建脚本
-
-
-
-```
-
-。
-
-
