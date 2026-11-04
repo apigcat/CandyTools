@@ -1,7 +1,6 @@
 # CandyTools v12.0
 
-## 本软件完全开源 
-## 测试机型三星S25U 
+## 使用声明
 
 1. **使用声明**：本软件仅供大家随意下载和使用，完全免费。
 2. **版权限制**：严禁任何形式的盗卖与二次修改，请尊重开发者的劳动成果。
@@ -19,7 +18,6 @@ CandyTools 是一款面向三星设备的系统工具，把散落在设置深处
 - 包名 `com.candy.tools`
 - versionCode 119 / versionName 12.0
 - minSdk 21 / targetSdk 33
-- 签名固定 `keystore/candy.jks`（alias `candy`，密码 `android`），可直接覆盖安装
 
 ## 二、主界面四项核心功能
 
