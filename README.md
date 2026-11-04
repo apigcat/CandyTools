@@ -7,7 +7,9 @@
 3. **开发心声**：开发这款工具属实不易，特别是系统底层数据的精准抓取、各项指标的闭环逻辑，以及整体 UI 的美化打磨，都耗费了大量心血和排坑时间。
 4. **关于打赏**：软件没有任何强制收费，如果你喜欢本作品，欢迎随意打赏支持，感谢理解与支持。
 
-> 作者：Candy dad's · 仓库：<https://github.com/apigcat/CandyTools> · 酷安：<https://www.coolapk.com/u/3988811>
+> 作者：Candy dad's · 仓库：<https://github.com/apigcat/CandyTools>
+
+> 酷安：<https://www.coolapk.com/u/3988811>
 
 ---
 
