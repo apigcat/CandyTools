@@ -1,4 +1,4 @@
-# CandyTools v12.0
+# CandyTools v12.0(已更新至12.2)
 
 ## 使用声明
 
