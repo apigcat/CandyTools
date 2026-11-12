@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shizuku / Material 3 浅色 -->
+    <color name="bg">#FEF7FF</color>
+    <color name="card">#F3EDF7</color>
+    <color name="tile">#E8DEF8</color>
+    <color name="stroke">#CAC4D0</color>
+    <color name="stroke_neon">#6750A4</color>
+
+    <color name="neon">#6750A4</color>
+    <color name="neon_dim">#4F378B</color>
+    <color name="danger">#B3261E</color>
+    <color name="danger_dim">#8C1D18</color>
+    <color name="warn">#9A6A00</color>
+
+    <color name="text_primary">#1C1B1F</color>
+    <color name="text_secondary">#49454F</color>
+    <color name="text_tertiary">#79747E</color>
+
+    <color name="on_neon">#FFFFFF</color>
+    <color name="divider">#CAC4D0</color>
+</resources>
