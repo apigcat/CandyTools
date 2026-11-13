@@ -180,3 +180,30 @@ keystore/candy.jks               签名
 ## 九、免责声明
 
 本软件仅用于调试自己的设备。旁路充电、锁频、卸载冻结与 Hosts 操作涉及系统底层，可能导致无服务、功能异常甚至需要刷机恢复，风险自负。使用前请确认已了解对应恢复方式。
+
+-----------------以下是展示图片，主题是暗色 可以切换浅色------------------
+
+
+
+
+<img width="239" height="500" alt="2" src="https://github.com/user-attachments/assets/15abcf83-fe05-4f1c-b100-7c97c1b21b4c" />
+
+
+<img width="239" height="500" alt="3" src="https://github.com/user-attachments/assets/a46bb601-77fc-46b2-b2d4-3a148aaae2e5" />
+
+
+<img width="239" height="500" alt="4" src="https://github.com/user-attachments/assets/8ead2699-e657-44fc-bf10-a30b2877131b" />
+
+
+<img width="239" height="500" alt="5" src="https://github.com/user-attachments/assets/570fa3eb-97b4-4a04-899c-6bd95dff0778" />
+
+
+<img width="239" height="500" alt="6" src="https://github.com/user-attachments/assets/861a2f6a-a0c3-4e3e-9cc8-43747dce9303" />
+
+
+<img width="239" height="500" alt="7" src="https://github.com/user-attachments/assets/c2ecfba3-7487-4fe0-a631-84b1eb89d6b4" />
+
+
+<img width="239" height="500" alt="1" src="https://github.com/user-attachments/assets/0b3e795a-3b0c-492f-8913-84125578fec1" />
+
+
