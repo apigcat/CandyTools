@@ -1,6 +1,6 @@
 {
-  "versionCode": 131,
-  "versionName": "12.12",
-  "notes": "冰冻列表首屏立显，睡眠状态只扫描用户应用；睡眠筛选下调按钮移除\n如果你有好的建议可以留言，我会择优采纳\n本项目永不添加广告；如果对你有用，可以打赏我",
+  "versionCode": 142,
+  "versionName": "12.23",
+  "notes": "充电状态文字移到电池正下方居中显示：未接入充电器 / 普通充电中 / 旁路充电中\n如果你有好的建议可以留言，我会择优采纳\n本项目永不添加广告；如果对你有用，可以打赏我",
   "url": "https://github.com/apigcat/CandyTools/releases/latest"
 }
