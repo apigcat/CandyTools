@@ -1,6 +1,6 @@
 {
-  "versionCode": 151,
-  "versionName": "13.0",
-  "notes": "13.0 最终版：清理全部残留字段与无用代码，功能与 12.31 一致\n如果你有好的建议可以留言，我会择优采纳\n本项目永不添加广告；如果对你有用，可以打赏我",
+  "versionCode": 166,
+  "versionName": "14.5",
+  "notes": "清理累计残留：删除未使用字段、失效的 settings 写入通道与废弃布局区块\n如果你有好的建议可以留言，我会择优采纳\n本项目永不添加广告；如果对你有用，可以打赏我",
   "url": "https://github.com/apigcat/CandyTools/releases/latest"
 }
