@@ -247,3 +247,8 @@
 <img width="239" height="500" alt="6" src="https://github.com/user-attachments/assets/861a2f6a-a0c3-4e3e-9cc8-43747dce9303" />
 <img width="239" height="500" alt="7" src="https://github.com/user-attachments/assets/c2ecfba3-7487-4fe0-a631-84b1eb89d6b4" />
 <img width="239" height="500" alt="1" src="https://github.com/user-attachments/assets/0b3e795a-3b0c-492f-8913-84125578fec1" />
+
+                                              如果对你有帮助
+                                              欢迎请我喝咖啡
+                                              谢谢！！！
+<img width="640" height="640" alt="打赏" src="https://github.com/user-attachments/assets/63c3249e-0b07-438d-8036-976a9bafbb88" />
