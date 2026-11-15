@@ -1,6 +1,6 @@
 {
-  "versionCode": 166,
+  "versionCode": 167,
   "versionName": "14.5",
-  "notes": "清理累计残留：删除未使用字段、修复绕过断流BUG\n如果你有好的建议可以留言，我会择优采纳\n本项目永不添加广告；如果对你有用，可以打赏我",
+  "notes": "此版本14.5已是最新，修复绕过断流BUG\n如果你有好的建议可以留言，我会择优采纳\n本项目永不添加广告；如果对你有用，可以打赏我",
   "url": "https://github.com/apigcat/CandyTools/releases/latest"
 }
